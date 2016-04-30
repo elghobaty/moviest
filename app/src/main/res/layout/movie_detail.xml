@@ -1,0 +1,193 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/movie_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="16dp"
+        tools:context=".fragment.MovieDetailFragment"
+        tools:showIn="@layout/activity_movie_detail">
+
+
+        <TextView
+            android:id="@+id/movie_title_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primary"
+            android:paddingBottom="32dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="32dp"
+            android:textColor="@color/primary_text"
+            android:textSize="32sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="16dp"
+            android:paddingRight="16dp">
+
+            <ImageView
+                android:id="@+id/movie_poster_image_view"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="24dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                tools:src="@drawable/ic_youtube_icon_light_24dp" />
+
+            <TextView
+                android:id="@+id/movie_release_year_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/movie_poster_image_view"
+                android:paddingBottom="8dp"
+                android:paddingTop="16dp"
+                android:textIsSelectable="true"
+                android:textSize="24sp"
+                tools:text="2016" />
+
+            <TextView
+                android:id="@+id/movie_rating_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/movie_release_year_text_view"
+                android:layout_toRightOf="@+id/movie_poster_image_view"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:textIsSelectable="true"
+                android:textSize="18sp"
+                tools:text="6.7 / 10" />
+
+            <TextView
+                android:id="@+id/favourite_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/movie_rating_text_view"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@+id/movie_poster_image_view"
+                android:drawableLeft="@drawable/ic_favorite_light_24dp"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:text="@string/favour"
+                android:textColor="@color/primary_text"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/movie_overview_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:lineSpacingExtra="5dp"
+            android:textColor="@color/primary_text"
+            android:textIsSelectable="true"
+            android:textSize="18sp"
+            tools:text="Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum " />
+
+
+        <View
+            android:id="@+id/trailers_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/accent"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/trailers_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:text="@string/trailers"
+            android:textColor="@color/primary_text"
+            android:textSize="24sp"
+            android:visibility="gone" />
+
+        <com.elghobaty.moviest.views.NonScrollableListView
+            android:id="@+id/trailers_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:scrollbars="none"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/no_trailers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:text="@string/no_trailers_available"
+            android:textColor="@color/secondary_text"
+            android:textSize="16sp"
+
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/reviews_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/accent"
+            android:textColor="@color/primary_text"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/reviews_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:text="@string/reviews"
+            android:textColor="@color/primary_text"
+            android:textSize="24sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/no_reviews"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:text="@string/no_reviews_available"
+            android:textColor="@color/secondary_text"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+
+        <LinearLayout
+            android:id="@+id/reviews_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+
+</ScrollView>

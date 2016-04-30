@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Moviest</string>
+    <string name="title_movie_detail">Movie Details</string>
+
+    <string name="no_favourites">You haven\'t favoured any movies yet.</string>
+    <string name="no_remote_movies">No movies.\nTap to retry.</string>
+    <string name="top_rated">Top Rated</string>
+    <string name="popular">Popular</string>
+    <string name="favourite">Favourites</string>
+    <string name="release_date">%1$s, %2$d</string>
+    <string name="formatted_rating">%1$s / 10</string>
+    <string name="share_message">Hey! Check out this movie: %1$s %2$s</string>
+    <string name="un_favour">Remove from favourites</string>
+    <string name="favour">Add to favourites</string>
+    <string name="by">By: %1$s</string>
+    <string name="loading">Loading…</string>
+    <string name="unexpected_error">An unexpected error has occurred.\nTry again later.</string>
+    <string name="share_title">Share Trailer</string>
+    <string name="sort_by">Sort By</string>
+    <string name="trailers">Trailers</string>
+    <string name="no_trailers_available">No Trailers Available</string>
+    <string name="reviews">Reviews</string>
+    <string name="no_reviews_available">No Reviews Available</string>
+</resources>
