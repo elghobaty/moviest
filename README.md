@@ -30,4 +30,5 @@ Don't forget to add the API key obtained from [themoviedb.org](https://www.themo
 
 
 #To-do List:
-- Endless scrolling
+- Add Endless scrolling to the movie grid.
+- Add now playing and upcoming to sorting options.
