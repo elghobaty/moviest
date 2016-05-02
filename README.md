@@ -32,3 +32,5 @@ Don't forget to add the API key obtained from [themoviedb.org](https://www.themo
 #To-do List:
 - Add Endless scrolling to the movie grid.
 - Add now playing and upcoming to sorting options.
+- Consider using the ButterKnife library for binding views. *(Udacity's Reviewer Notes)*
+- Consider implementing the Parcelable interface as it is more performant on Android than Serializable. *(Udacity's Reviewer Notes)*
